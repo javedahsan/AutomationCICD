@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel = "test" name="Suite">
+	<groups>
+		<run>
+			<include name="Purchase" />
+		</run>
+	</groups>
+	
+	<test thread-count="5" name="Submit Order Test">
+    	<classes>
+      		<class name="rahulshettyacademy.tests.SubmitOrderTest"/>
+    	</classes>
+	</test>
+  <test thread-count="5" name="Login Error Validation Test">
+    <classes>
+      <class name="rahulshettyacademy.tests.loginErrorValidationTest"/>
+    </classes>
+  </test> <!-- Test -->
+ </suite> <!-- Suite -->
