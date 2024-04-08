@@ -46,7 +46,7 @@ public class BaseTest {
 		prop.load(fis);
 		String browserName = System.getProperty("browser") != null ? System.getProperty("browser")
 				: prop.getProperty("browser");
-
+		System.out.println("Test for Jenkin notification");
 //		prop.getProperty("browser");
 
 		if (browserName.contains("chrome")) {
@@ -123,4 +123,5 @@ public class BaseTest {
 	public void tearDown() {
 		driver.close();
 	}
+	
 }
